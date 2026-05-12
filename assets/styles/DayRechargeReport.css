@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.report-container {
+  background: #f7f9fc;
+  min-height: 100vh;
+}
+
+/* Header */
+.top-header {
+  background: #0d47a1;
+  color: #fff;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wallet-info {
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+}
+
+.admin {
+  font-weight: bold;
+}
+
+/* Title */
+.page-title {
+  margin: 20px;
+  color: #1f2a44;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 15px;
+  padding: 0 20px 20px;
+}
+
+.filters input,
+.filters select {
+  padding: 10px;
+  width: 180px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn {
+  padding: 10px 22px;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.search-btn {
+  background: #2ecc71;
+}
+
+.excel-btn {
+  background: #0d47a1;
+}
+
+/* Table Search */
+.table-search {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px 10px;
+  gap: 10px;
+}
+
+.table-search input {
+  padding: 6px 10px;
+  width: 200px;
+}
+
+/* Table */
+.table-wrapper {
+  background: #fff;
+  margin: 0 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  padding: 14px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #3f4d7a;
+  border-bottom: 2px solid #000;
+  text-align: left;
+}
+
+tbody td {
+  padding: 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+.total-row td {
+  font-weight: bold;
+  color: #3f4d7a;
+}
+
+/* Bottom Line */
+.bottom-line {
+  height: 4px;
+  background: #1e88e5;
+  margin: 20px;
+  border-radius: 2px;
+}
+

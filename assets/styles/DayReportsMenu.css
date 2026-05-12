@@ -1,0 +1,47 @@
+.reports-menu {
+  margin-bottom: 10px;
+}
+
+/* Clickable Title */
+.reports-title {
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #3f4d7a;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.reports-title:hover {
+  background: #e3f2fd;
+}
+
+/* Dropdown List */
+.reports-list {
+  padding-left: 20px;
+}
+
+/* Links */
+.reports-list a {
+  display: block;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.reports-list a:hover {
+  background: #e3f2fd;
+  color: #0d47a1;
+}
+
+/* Active Link */
+.reports-list a.active {
+  background: #0d47a1;
+  color: #fff;
+  font-weight: 600;
+}
+

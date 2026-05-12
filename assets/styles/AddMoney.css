@@ -1,0 +1,36 @@
+.addmoney-page {
+  padding: 30px;
+}
+
+.addmoney-form {
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.addmoney-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.addmoney-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.addmoney-form button {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.addmoney-form button:hover {
+  background: #16a34a;
+}

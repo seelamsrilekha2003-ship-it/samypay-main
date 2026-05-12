@@ -1,0 +1,132 @@
+.kyc-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.kyc-modal-content {
+    background-color: white;
+    width: 90%;
+    max-width: 1000px;
+    max-height: 90vh;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.kyc-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.kyc-modal-header h3 {
+    margin: 0;
+    color: #17a2b8;
+    font-size: 1.1rem;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+}
+
+.kyc-modal-body {
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    overflow-y: auto;
+}
+
+.kyc-document-preview {
+    flex: 1;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.kyc-document-preview img {
+    max-width: 100%;
+    max-height: 400px;
+}
+
+.kyc-details-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Documents Table */
+.kyc-docs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.kyc-docs-table th,
+.kyc-docs-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+.kyc-docs-table th {
+    background-color: #e6e6cd;
+    color: #333;
+}
+
+.btn-view {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    color: #856404;
+    padding: 2px 8px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
+
+.verified-tag {
+    color: #17a2b8;
+    font-size: 0.75rem;
+    display: block;
+}
+
+/* User Info Table */
+.kyc-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #333;
+    color: white;
+}
+
+.kyc-info-table tr {
+    border-bottom: 1px solid #444;
+}
+
+.kyc-info-table td {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+}
+
+.kyc-info-table td:first-child {
+    width: 40%;
+    font-weight: bold;
+}

@@ -1,0 +1,119 @@
+.sidebar {
+  width: 240px;
+  background: #ffffff;
+  border-right: 1px solid #eee;
+  padding: 20px 0;
+}
+
+/* Logo */
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1e3a8a;
+}
+
+/* Menu */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Menu items */
+.menu li {
+  padding: 12px 18px;          /* 🔽 reduced from 14px 25px */
+  cursor: pointer;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 8px;                    /* 🔽 reduced gap */
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Hover & Active */
+.menu li:hover,
+.menu li.active {
+  background: #eef2ff;
+  color: #1e3a8a;
+  border-radius: 6px;
+}
+
+/* Sidebar links */
+.menu a {
+  text-decoration: none;
+  color: inherit;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ================= USER DROPDOWN ================= */
+
+.user-parent {
+  border-radius: 10px;
+  background: #f5f9ff;
+  margin: 6px 8px;             /* 🔽 reduced side margin */
+}
+
+/* Title row */
+.user-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;          /* 🔽 reduced padding */
+  cursor: pointer;
+  font-weight: 500;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Arrow animation */
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.rotate {
+  transform: rotate(180deg);
+}
+
+/* Submenu */
+.user-submenu {
+  list-style: none;
+  padding: 6px 0 10px 22px;    /* 🔽 reduced left padding */
+  margin: 0;
+}
+
+/* Submenu items */
+.user-submenu li {
+  padding: 6px 0;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Submenu links */
+.user-submenu a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Active submenu */
+.user-submenu a.active {
+  color: #0b58d6;
+  font-weight: 600;
+}
+

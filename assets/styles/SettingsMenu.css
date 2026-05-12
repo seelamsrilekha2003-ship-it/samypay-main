@@ -1,0 +1,139 @@
+/* Wrapper */
+.settings-simple {
+  margin-left: 10px;
+}
+
+/* Settings title */
+.settings-title {
+  cursor: pointer;
+  /* underline removed */
+  text-decoration: none;
+  font-weight: 500;
+  margin: 6px 0;
+}
+
+/* Sub list */
+.settings-list {
+  margin-left: 18px;
+  margin-top: 6px;
+}
+
+/* Links */
+.settings-list a {
+  display: block;
+  text-decoration: none;   /* already no underline */
+  color: inherit;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+/* Active page */
+.settings-list a.active {
+  /* underline removed */
+  text-decoration: none;
+  font-weight: 600;
+}
+/* ================= SETTINGS / DROPDOWN TITLE ================= */
+.settings-title {
+  padding: 14px 22px;
+  margin: 6px 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #334155;
+  font-weight: 500;
+  cursor: pointer;
+
+  border-radius: 8px;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+/* Hover same as normal menu item */
+.settings-title:hover {
+  background: #eef2ff;
+  color: #1e3a8a;
+}
+
+/* ICON same size as other menu icons */
+.settings-title .icon {
+  width: 22px;
+  min-width: 22px;
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  color: #475569;
+}
+
+/* TEXT */
+.settings-title .text {
+  flex: 1;
+  text-align: left;
+}
+
+/* ARROW right side */
+.settings-title .arrow {
+  font-size: 12px;
+  transition: transform 0.25s ease;
+}
+
+.settings-title .arrow.rotate {
+  transform: rotate(180deg);
+}
+.settings-list {
+  padding-left: 48px;   /* align under text */
+  margin-top: 6px;
+}
+
+.settings-list a {
+  display: block;
+  padding: 6px 0;
+  font-size: 14px;
+  color: #475569;
+  text-decoration: none;
+}
+
+.settings-list a:hover {
+  color: #1e3a8a;
+}
+.menu-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.submenu {
+  list-style: none;
+  padding-left: 36px;
+  margin: 6px 0;
+}
+
+.submenu li a {
+  display: block;
+  padding: 6px 0;
+  font-size: 14px;
+  color: #475569;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  color: #1e3a8a;
+}
+
+.arrow {
+  margin-left: auto;
+  transition: transform 0.2s ease;
+}
+
+.arrow.rotate {
+  transform: rotate(90deg);
+}
+
+

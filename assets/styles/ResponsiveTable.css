@@ -1,0 +1,99 @@
+/* RESPONSIVE TABLE (STACKED CARDS) */
+@media (max-width: 768px) {
+
+    .report-table table,
+    .table-wrapper table,
+    .users-table-wrapper table,
+    .user-role-table-wrapper table {
+        min-width: unset !important;
+    }
+
+    .report-table table,
+    .report-table thead,
+    .report-table tbody,
+    .report-table th,
+    .report-table td,
+    .report-table tr,
+    .table-wrapper table,
+    .table-wrapper thead,
+    .table-wrapper tbody,
+    .table-wrapper th,
+    .table-wrapper td,
+    .table-wrapper tr,
+    .users-table-wrapper table,
+    .users-table-wrapper thead,
+    .users-table-wrapper tbody,
+    .users-table-wrapper th,
+    .users-table-wrapper td,
+    .users-table-wrapper tr,
+    .user-role-table-wrapper table,
+    .user-role-table-wrapper thead,
+    .user-role-table-wrapper tbody,
+    .user-role-table-wrapper th,
+    .user-role-table-wrapper td,
+    .user-role-table-wrapper tr {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    .report-table thead tr,
+    .table-wrapper thead tr,
+    .users-table-wrapper thead tr,
+    .user-role-table-wrapper thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .report-table tr,
+    .table-wrapper tr,
+    .users-table-wrapper tr,
+    .user-role-table-wrapper tr {
+        margin-bottom: 20px;
+        border: 1px solid #e2e8f0 !important;
+        border-radius: 12px;
+        padding: 10px;
+        background: #fff;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    }
+
+    .report-table td,
+    .table-wrapper td,
+    .users-table-wrapper td,
+    .user-role-table-wrapper td {
+        border: none !important;
+        border-bottom: 1px solid #f1f5f9 !important;
+        position: relative;
+        padding: 12px 12px 12px 45% !important;
+        text-align: right !important;
+        min-height: 45px;
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .report-table td:last-child,
+    .table-wrapper td:last-child,
+    .users-table-wrapper td:last-child,
+    .user-role-table-wrapper td:last-child {
+        border-bottom: none !important;
+    }
+
+    .report-table td::before,
+    .table-wrapper td::before,
+    .users-table-wrapper td::before,
+    .user-role-table-wrapper td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 12px;
+        width: 40%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: 700;
+        color: #64748b;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+}

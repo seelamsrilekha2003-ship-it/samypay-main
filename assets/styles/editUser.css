@@ -1,0 +1,57 @@
+.edit-user-page {
+  padding: 24px;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+.edit-user-page h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.edit-user-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.col input,
+.col textarea,
+.col select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  font-size: 14px;
+}
+
+.col textarea {
+  resize: none;
+  height: 80px;
+}
+
+.edit-user-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.edit-user-actions button {
+  padding: 8px 18px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-user-actions button:first-child {
+  background: #0b4dbb;
+  color: #fff;
+}
+
+.edit-user-actions button:last-child {
+  background: #9ca3af;
+  color: #fff;
+}

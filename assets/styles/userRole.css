@@ -1,0 +1,150 @@
+.user-role-page {
+  padding: 24px;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+/* Header */
+.user-role-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.user-role-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e2a5a;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-box input {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+}
+
+/* Table */
+.user-role-table-wrapper {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.user-role-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-role-table th {
+  background: #f8f9fc;
+  text-align: left;
+  padding: 12px;
+  font-size: 12px;
+  color: #3b4a86;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.user-role-table td {
+  padding: 14px 12px;
+  vertical-align: top;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+  color: #2b2f4c;
+}
+
+.role-name {
+  font-weight: 600;
+}
+
+/* Rights pills */
+.rights-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.right-pill {
+  background: #6ea0f8;
+  color: #0b2c6d;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Edit Button */
+/* ACTION BUTTON CONTAINER */
+.action-cell {
+  display: flex;
+  gap: 8px;                 /* 🔥 space between buttons */
+  align-items: center;
+}
+
+/* COMMON BUTTON STYLE */
+.action-btn {
+  border: none;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+/* ADD */
+.action-btn.add {
+  background-color: #22c55e; /* green */
+}
+.action-btn.add:hover {
+  background-color: #16a34a;
+}
+
+/* EDIT */
+.action-btn.edit {
+  background-color: #042e71; /* blue */
+}
+
+
+/* DELETE */
+.action-btn.delete {
+  background-color: #ef4444; /* red */
+}
+.action-btn.delete:hover {
+  background-color: #dc2626;
+}
+
+/* Footer */
+.user-role-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  font-size: 14px;
+}
+
+.pagination {
+  display: flex;
+  gap: 6px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: #1553d1;
+}
+
+.pagination .active {
+  background: #0b4dbb;
+  color: #fff;
+}

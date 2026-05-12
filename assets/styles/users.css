@@ -1,0 +1,179 @@
+.users-page {
+  padding: 24px;
+  background: #f5f7fb;
+  min-height: 100vh;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* Header */
+.users-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.users-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e2a5a;
+}
+
+.users-actions .excel {
+  background: #0b4dbb;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.users-actions .excel:hover {
+  background: #083a8c;
+}
+
+/* Search */
+.users-search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.users-search input {
+  width: 260px;
+}
+
+
+.users-search input {
+  padding: 9px 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 13px;
+  outline: none;
+}
+
+.users-search input:focus {
+  border-color: #0b4dbb;
+}
+
+/* Table */
+.users-table-wrapper {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table th {
+  background: #f8f9fc;
+  text-align: left;
+  padding: 14px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #3b4a86;
+  border-bottom: 1px solid #e5e7eb;
+  letter-spacing: 0.3px;
+}
+
+.users-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+  color: #2b2f4c;
+}
+
+.users-table tr:hover td {
+  background: #f9fbff;
+}
+
+/* Sub text */
+.sub-text {
+  font-size: 12px;
+  color: #8a8fa7;
+  margin-top: 4px;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.btn.rights {
+  background-color: #22c55e; /* green */
+}
+.btn.rights:hover {
+  background-color: #16a34a;
+}
+
+/* EDIT */
+.btn.edit {
+  background-color: #042e71; /* blue */
+}
+
+
+/* DELETE */
+.btn.delete {
+  background-color: #ef4444; /* red */
+}
+.btn.delete:hover {
+  background-color: #dc2626;
+}
+
+/* Footer */
+.users-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0 8px;
+  font-size: 13px;
+  color: #555;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  gap: 6px;
+}
+
+.page-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  background: #ffffff;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.page-btn:hover {
+  background: #f3f4f6;
+}
+
+.page-btn.active {
+  background: #0b4dbb;
+  color: #fff;
+  border-color: #0b4dbb;
+}

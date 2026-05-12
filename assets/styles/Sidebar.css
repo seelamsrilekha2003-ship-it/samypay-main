@@ -1,0 +1,196 @@
+.sidebar {
+  width: 260px;
+  min-width: 260px;
+  height: 100vh;
+
+  background: #ffffff;
+  border-right: 1px solid #e5e7eb;
+
+  overflow: hidden;
+  /* z-index removed, handled by layout/mobile */
+}
+
+/* ================= LOGO ================= */
+.logo {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+/* ================= MENU (SCROLL AREA) ================= */
+.menu {
+  height: calc(100vh - 90px);
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  list-style: none;
+  margin: 0;
+  padding: 10px 8px;
+}
+
+/* 🔥 EXTRA SPACE FIX (NO JSX CHANGE) */
+.menu::after {
+  content: "";
+  display: block;
+  height: 90px;
+  /* ✅ EXTRA SPACE BOTTOM */
+}
+
+/* ================= MENU ITEM ================= */
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px;
+  margin-bottom: 6px;
+
+  font-size: 14.5px;
+  color: #111827;
+
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+/* LINKS */
+.menu-item a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+/* HOVER */
+.menu-item:hover {
+  background: #f1f5ff;
+}
+
+/* ================= DROPDOWN CARD ================= */
+.menu-item.card {
+  background: #f8fafc;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.menu-item.card:hover {
+  background: #eef2ff;
+}
+
+/* ================= ICON BASE ================= */
+.icon {
+  min-width: 22px;
+  font-size: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================= ICON COLORS ================= */
+.icon.dashboard {
+  color: #2563eb;
+}
+
+.icon.wallet {
+  color: #16a34a;
+}
+
+.icon.recharge {
+  color: #f59e0b;
+}
+
+.icon.settings {
+  color: #9333ea;
+}
+
+.icon.commission {
+  color: #0f766e;
+}
+
+.icon.users {
+  color: #1d4ed8;
+}
+
+.icon.report {
+  color: #dc2626;
+}
+
+.icon.daily {
+  color: #0891b2;
+}
+
+/* ================= TEXT ================= */
+.text {
+  flex: 1;
+}
+
+/* ================= ARROW ================= */
+.arrow {
+  font-size: 18px;
+  color: #9ca3af;
+  transition: transform 0.25s ease;
+}
+
+.arrow.rotate {
+  transform: rotate(90deg);
+}
+
+/* ================= DROPDOWN HEADER ================= */
+.menu-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* ================= SUBMENU ================= */
+.submenu {
+  list-style: none;
+  margin: 6px 0 6px 0;
+  padding: 0;
+}
+
+/* SUBMENU LINKS */
+.submenu li a {
+  display: block;
+  padding: 8px 0 8px 36px;
+
+  font-size: 13.5px;
+  color: #475569;
+  text-decoration: none;
+
+  border-radius: 8px;
+}
+
+.submenu li a:hover {
+  background: #e0edff;
+  color: #1e3a8a;
+}
+
+/* ================= SCROLLBAR ================= */
+.menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.menu::-webkit-scrollbar-thumb {
+  background: #c7d2fe;
+  border-radius: 6px;
+}
+
+.menu::-webkit-scrollbar-thumb:hover {
+  background: #a5b4fc;
+}

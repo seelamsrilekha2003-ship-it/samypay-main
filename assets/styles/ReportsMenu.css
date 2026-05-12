@@ -1,0 +1,37 @@
+/* Wrapper */
+.reports-menu {
+  margin-left: 10px;
+}
+
+/* Title */
+.reports-title {
+  cursor: pointer;
+  font-weight: 500;
+  margin: 6px 0;
+  /* underline removed */
+  text-decoration: none;
+}
+
+/* Sub list */
+.reports-list {
+  margin-left: 18px;
+  margin-top: 6px;
+}
+
+/* Links */
+.reports-list a {
+  display: block;
+  text-decoration: none;   /* already no underline */
+  color: inherit;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+/* Active */
+.reports-list a.active {
+  /* underline removed */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+

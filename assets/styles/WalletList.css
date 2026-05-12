@@ -1,0 +1,97 @@
+.wallet-container {
+  padding: 25px;
+  background: #f9fbff;
+  min-height: 100vh;
+}
+
+.wallet-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+select,
+input[type="number"],
+input[type="date"],
+input[type="text"] {
+  width: 280px;
+  padding: 8px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+}
+
+.amount-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-save {
+  background: #2ecc71;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.filter-row {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn-search {
+  background: #0d47a1;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+}
+
+.btn-excel {
+  margin-top: 15px;
+  background: #0d47a1;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+}
+
+.table-search {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.wallet-table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+  background: white;
+}
+
+.wallet-table th,
+.wallet-table td {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.wallet-table th {
+  background: #f4f6fb;
+}
+
+.no-data {
+  text-align: center;
+  color: #777;
+}

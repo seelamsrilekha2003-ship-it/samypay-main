@@ -1,0 +1,22 @@
+:root {
+	/* ================= STANDARD THEME (Classic) ================= */
+
+	/* Primary - Blue */
+	--primary-color: #0b4cc9;
+
+	/* Backgrounds */
+	--bg-color: #f8fafc;
+	--card-bg: #ffffff;
+
+	/* Text */
+	--text-primary: #1e293b;
+	--text-secondary: #64748b;
+
+	/* States */
+	--success: #10b981;
+	--warning: #f59e0b;
+	--danger: #ef4444;
+
+	/* Borders */
+	--border-color: #e2e8f0;
+}

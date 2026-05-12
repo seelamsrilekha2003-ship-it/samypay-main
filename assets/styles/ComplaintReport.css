@@ -1,0 +1,105 @@
+.report-page {
+  padding: 20px;
+  background: #f6f8fc;
+  font-family: Arial, sans-serif;
+}
+
+.page-title {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+/* FILTER */
+.filter-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #fff;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.filter-card input {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  min-width: 220px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn.search {
+  background: #0b4bb8;
+}
+
+.btn.excel {
+  background: #22c55e;
+}
+
+/* SEARCH */
+.table-search {
+  display: flex;
+  justify-content: flex-end;
+  margin: 12px 0;
+}
+
+.table-search input {
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+}
+
+/* TABLE */
+.table-wrapper {
+  background: #fff;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #f8fafc;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  font-size: 14px;
+}
+
+.no-data {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+}
+
+/* FOOTER */
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.pagination button {
+  margin-left: 6px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #e5e7eb;
+}
