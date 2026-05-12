@@ -1,6 +1,5 @@
 const axios = require('axios');
-const path = require('path');
-require('dotenv').config({ path: path.join(__dirname, '.env') });
+require('dotenv').config({ path: 'backend/.env' });
 
 const endpoints = [
     "api/Mobile/ElectricityBillFetch",
@@ -14,7 +13,7 @@ const methods = ["GET", "POST"];
 const params = {
     apimember_id: process.env.PLAN_API_ID,
     api_password: process.env.PLAN_API_PASSWORD,
-    bill_number: "3482100012", // Try without hyphen
+    bill_number: "3482100012", // Try without hyphen too
     operator_code: "153",
     Optional1: "",
     Optional2: ""
@@ -22,11 +21,6 @@ const params = {
 
 async function probe() {
     console.log("Starting Probe...");
-
-    if (!process.env.PLAN_API_ID) {
-        console.error("❌ ENV VARIABLES MISSING");
-        return;
-    }
 
     for (const endpoint of endpoints) {
         for (const method of methods) {

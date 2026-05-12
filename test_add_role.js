@@ -11,12 +11,10 @@ async function testAdd() {
         });
         console.log(res.data);
     } catch (err) {
-        console.log("FULL ERROR:");
         if (err.response) {
-            console.log(err.response.status);
-            console.log(err.response.data);
+            console.error(err.response.data);
         } else {
-            console.log(err.message);
+            console.error(err.message);
         }
     }
 }

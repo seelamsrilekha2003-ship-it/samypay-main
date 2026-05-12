@@ -1,0 +1,48 @@
+@import "./assets/styles/global.css";
+@import "./assets/styles/theme.css";
+
+/* ================= ROOT RESET ================= */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  /* PAGE SCROLL OFF */
+}
+
+/* ================= LAYOUT ================= */
+/* ================= LAYOUT (Moved to MainLayout.css) ================= */
+/* 
+.layout {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.main {
+  margin-left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
+.layout.sidebar-open .main {
+  margin-left: 240px;
+  width: calc(100vw - 240px);
+}
+*/
+
+/* ================= CONTENT ================= */
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  /* ONLY CONTENT SCROLL */
+  background: #f8fafc;
+}

@@ -1,5 +1,5 @@
 const Database = require('better-sqlite3');
-const db = new Database('./samypay.db');
+const db = new Database('./backend/samypay.db');
 
 try {
     // Check total count
